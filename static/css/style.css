@@ -1,0 +1,107 @@
+:root {
+    --background: #FBFBFB;
+    --light-colors-primary: #060606;
+    --primary: #8879ea;
+    --Light-Colors-Dark-Grey: #767676;
+    --base-font-size: 16px; /* Default base font size */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 1rem;
+    font-family: "Ubuntu",sans-serif;
+    height: 100%;
+    background: var(--background);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    padding: 3vh 15vw;
+    background: var(--background);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.logo {
+    position: absolute;
+}
+
+.logo a{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--light-colors-primary);
+    letter-spacing: -0.05rem;
+}
+
+.top-right{
+    position: absolute;
+    display: flex;
+    right: 15vw;
+}
+
+
+.profile-card{
+    display: flex;
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+
+.profile-picture{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.profile-picture img{
+    width: 100%;
+    height: auto;
+}
+
+.profile-info{
+    margin-left: 3vw;
+    text-align: left;
+}
+
+.title-name{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.title-desc{
+    font-size: 1.4rem;
+    color: #777;
+    margin: 2vh 0;
+}
+
+.social-icons{
+    display: flex;
+    gap: 1vw;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: var(--light-colors-primary);
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0073b1; /* LinkedIn color for hover */
+}
