@@ -13,7 +13,6 @@
 }
 
 body, html {
-    font-size: 1rem;
     font-family: "Ubuntu",sans-serif;
     height: 100%;
     background: var(--background);
@@ -25,7 +24,7 @@ a{
 
 .container {
     width: 100%;
-    padding: 3vh 15vw;
+    padding: 2vh 5vw;
     background: var(--background);
     flex-direction: column;
     align-items: center;
@@ -42,7 +41,7 @@ a{
 
 .logo a{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--light-colors-primary);
     letter-spacing: -0.05rem;
@@ -51,57 +50,100 @@ a{
 .top-right{
     position: absolute;
     display: flex;
-    right: 15vw;
+    right: 5vw;
 }
 
 
 .profile-card{
     display: flex;
-    margin-top: 30vh;
+    margin-top: 33vh;
     margin-bottom: 5vh;
     align-items: center;
 }
 
 .profile-picture{
-    width: 15vw;
-    height: 15vw;
-    border-radius: 100%;
-    overflow: hidden;
+    width: 27vw;
+    height: 27vw;
 }
 
 .profile-picture img{
     width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
     height: auto;
 }
 
 .profile-info{
-    margin-left: 3vw;
+    margin-left: 2vw;
     text-align: left;
 }
 
 .title-name{
-    font-size: 3.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 .title-desc{
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     color: #777;
-    margin: 2vh 0;
+    margin: 1vh 0;
 }
 
 .social-icons{
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
 }
 
 .social-icons a{
     text-decoration: none;
     color: var(--light-colors-primary);
-    font-size: 2rem;
+    font-size: 1.3rem;
     transition: color 0.3s;
 }
 
 .social-icons a:hover {
     color: #0073b1; /* LinkedIn color for hover */
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 3vh 15vw;
+    }
+
+    .logo a{
+        font-size: 2rem; /* Scales up on larger screens */
+    }
+
+    .top-right{
+        right: 15vw;
+    }
+
+    .social-icons{
+        gap: 1vw;
+    }
+
+    .social-icons a{
+        font-size: 2rem;
+    }
+
+    .profile-picture {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .profile-info{
+        margin-left: 3vw;
+    }
+
+    .title-name {
+        font-size: 3.5rem;
+    }
+
+    .title-desc {
+        font-size: 1.4rem;
+    }
+
+    .title-desc{
+        margin: 2vh 0;
+    }
 }
