@@ -1,51 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mardon's Blog</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-    <link href="/static/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Mardon Hazratov | Personal Blog</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-    <div class="container">
-        <div class="logo">
-            <a href="/">Mardon's Blog</a>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Mardon Hazratov</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="top-right">
-            <div class="social-icons">
-                <a href="https://github.com/mardonbekhazratov/" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mardon-hazratov/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://t.me/mardonbekhazratov" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-        </div>
-        
-        <div class="profile-card">
+    <section id="about" class="hero">
+        <div class="container hero-content">
+            <img src="static/img/profile.jpg" alt="Mardon Hazratov" class="profile-pic">
             
-            <div class="profile-picture">
-                <img src="static/img/profile.jpg" alt="Mardon">
-            </div>
+            <h1>Hi, I'm Mardon.</h1>
+            <p class="bio">
+                I am a competitive programmer and IOI 2024 Bronze Medalist based in Tashkent. 
+                My work focuses on C++, Python, and Machine Learning.
+            </p>
             
-            <div class="profile-info">
-                <div class="title-name">Mardon Hazratov</div>
-                <div class="title-desc">Software Engineering Student @ NewUU</div>
+            <div class="social-links">
+                <a href="https://github.com/mardonbekhazratov" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/mardon-hazratov" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://t.me/mardonbekhazratov" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
             </div>
-
-
         </div>
+    </section>
 
-    </div>
+    <section id="blog" class="container">
+        <h2>Latest Posts</h2>
+        <div class="post-grid">
+            <p class="empty-state">Empty</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mardon Hazratov. Built for GitHub Pages.</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
